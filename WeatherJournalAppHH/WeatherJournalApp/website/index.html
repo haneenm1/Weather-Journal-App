@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Oswald:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app">
+        <header class="headline">Weather Journal</header>
+        <div class="form-container">
+            <div class="holder zip">
+                <input type="text" id="zipCodeInput" placeholder="Enter Zipcode" />
+                <small id="errorDisplay"></small>
+            </div>
+            <div class="holder feel">
+                <textarea id="feelingsInput" placeholder="How are you feeling today?" rows="5"></textarea>
+                <button id="generateWeatherData" type="submit">Generate</button>
+            </div>
+        </div>
+        <div id="entry">
+            <div class="title">Most Recent Entry</div>
+            <div id="entryHolder">
+                <div id="temperature"></div>
+                <div id="city"></div>
+                <div id="description"></div>
+                <div id="date"></div>
+                <div id="feelings"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
